@@ -1,0 +1,47 @@
+# North Indian Ocean Domain & Dataset Configuration for OceanEmbed (PS 26066)
+
+domain:
+  name: "North Indian Ocean"
+  lat_min: 5.0
+  lat_max: 30.0
+  lon_min: 45.0
+  lon_max: 105.0
+  resolution: 0.25 # degrees (101 lat x 241 lon)
+
+time_range:
+  default_start_date: "2021-01-01"
+  default_end_date: "2021-01-05"
+
+depths:
+  standard_levels: [0, 5, 10, 20, 30, 50, 75, 100, 125, 150, 200, 300, 500, 700, 1000]
+
+paths:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+
+# Copernicus Marine Service (CMEMS) Multi-Year (MY / Reprocessed) Datasets
+cmems_datasets:
+  sst:
+    dataset_id: "METOFFICE-GLO-SST-L4-REP-OBS-SST"
+    alt_dataset_id: "cmems_obs-sst_glo_phy-sst_my_0.05deg_P1D-m"
+    variables: ["analysed_sst"]
+    description: "OSTIA Global SST L4 Reprocessed (DOI: 10.48670/moi-00168)"
+  
+  sss:
+    dataset_id: "cmems_obs-mob_glo_phy-sss_my_multi_P1D"
+    alt_dataset_id: "MULTIOBS_GLO_PHY_S_SURFACE_MYNRT_015_013"
+    variables: ["sos"]
+    description: "Global SSS L4 Multi-Year Reprocessed (DOI: 10.48670/moi-00051)"
+    
+  ssh:
+    dataset_id: "cmems_obs-sl_glo_phy-ssh_my_allsat-l4-duacs-0.125deg_P1D"
+    alt_dataset_id: "c3s_obs-sl_glo_phy-ssh_my_two-sat-l4-duacs-0.25deg_P1D"
+    variables: ["sla", "adt", "ugos", "vgos"]
+    description: "DUACS Sea Level Anomaly & Currents Multi-Year (DOI: 10.48670/moi-00145)"
+    
+  target_glorys:
+    dataset_id: "cmems_mod_glo_phy_my_0.083deg_P1D-m"
+    variables: ["thetao"]
+    depth_min: 0.494
+    depth_max: 1000.0
+    description: "GLORYS12V1 Daily Subsurface Temperature Reanalysis (DOI: 10.48670/moi-00021)"
