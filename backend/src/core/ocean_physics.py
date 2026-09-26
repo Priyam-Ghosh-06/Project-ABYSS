@@ -1,5 +1,5 @@
 """
-Ocean Physics module for OceanEmbed.
+Ocean Physics module for Project ABYSS.
 Computes oceanographic diagnostics from 3D subsurface temperature fields:
 - Z20: Depth of the 20°C isotherm (thermocline indicator)
 - MLD: Mixed Layer Depth (temperature drop criterion)

@@ -1,1 +1,1 @@
-"""OceanEmbed backend package."""
+"""Project ABYSS backend package."""

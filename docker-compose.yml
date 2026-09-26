@@ -3,7 +3,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: oceanembed-backend
+    container_name: abyss-backend
     restart: unless-stopped
     ports:
       - "8000:8000"
@@ -24,7 +24,7 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: oceanembed-frontend
+    container_name: abyss-frontend
     restart: unless-stopped
     ports:
       - "3000:80"

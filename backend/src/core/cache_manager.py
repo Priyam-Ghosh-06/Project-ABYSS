@@ -1,5 +1,5 @@
 """
-Cache & Storage Manager for OceanEmbed.
+Cache & Storage Manager for Project ABYSS.
 Serves pre-computed, standardized daily packages directly from high-speed in-memory RAM
 and backend/data/processed/daily_025/ persistent storage.
 Guarantees sub-millisecond responses (< 0.1ms) across the entire year.

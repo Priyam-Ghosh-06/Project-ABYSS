@@ -1,5 +1,5 @@
 """
-Data Loader & Harmonization Engine for OceanEmbed.
+Data Loader & Harmonization Engine for Project ABYSS.
 Loads and regrids multi-source satellite observations and subsurface reanalysis data
 to the standardized 0.25° North Indian Ocean grid (101 lat x 241 lon) and 15 standard depth levels.
 Optimized for high-speed integer array indexing.
@@ -29,7 +29,7 @@ class DataLoader:
         return cls._instance
 
     def _init_loader(self):
-        print("Initializing OceanEmbed Data Loader...")
+        print("Initializing Project ABYSS Data Loader...")
         self.raw_dir = RAW_DATA_DIR
         self.sst_path = self.raw_dir / "sst" / "sst_2018.nc"
         self.sss_path = self.raw_dir / "sss" / "sss_2018.nc"

@@ -38,12 +38,12 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-4">
         {/* Logo & Title */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-lg bg-blue-700 flex items-center justify-center text-white font-bold text-lg shadow-sm">
-            OE
+          <div className="w-10 h-10 rounded-lg bg-blue-700 flex items-center justify-center text-white font-black text-[11px] tracking-wider uppercase shadow-sm">
+            ABYSS
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-lg font-bold tracking-tight">OceanEmbed</h1>
+              <h1 className="text-lg font-bold tracking-tight">Project ABYSS</h1>
               <span className={`text-xs px-2 py-0.5 rounded-full font-medium flex items-center gap-1 ${
                 isDarkMode ? 'bg-blue-900 text-blue-200 border border-blue-700' : 'bg-blue-100 text-blue-800 border border-blue-200'
               }`}>

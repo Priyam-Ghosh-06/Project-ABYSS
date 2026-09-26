@@ -1,5 +1,5 @@
 """
-Cache pre-computation script for OceanEmbed.
+Cache pre-computation script for Project ABYSS.
 Pre-caches key seasonal benchmark days and initial dates into compressed .npz format.
 """
 

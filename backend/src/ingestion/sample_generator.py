@@ -1,5 +1,5 @@
 """
-Synthetic / Mock Data Generator for OceanEmbed.
+Synthetic / Mock Data Generator for Project ABYSS.
 Generates realistic 0.25° NetCDF files for SST, SSS, SSH, Currents, Winds, and Target GLORYS
 to test the end-to-end preprocessing, harmonization, and DL pipeline without waiting for large downloads.
 """

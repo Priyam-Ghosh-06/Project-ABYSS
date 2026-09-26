@@ -1,5 +1,5 @@
 """
-FastAPI REST API Application for OceanEmbed.
+FastAPI REST API Application for Project ABYSS.
 Provides high-performance endpoints for 2D geospatial maps, 3D ocean volume slices,
 vertical transects, vertical sounding profiles, and AI reconstruction validation.
 """
@@ -23,7 +23,7 @@ from ..core.cache_manager import CacheManager
 from ..models.reconstruction_poc import ReconstructionEngine
 
 app = FastAPI(
-    title="OceanEmbed API",
+    title="Project ABYSS API",
     description="Satellite Embedding-Based Deep Learning Framework for Subsurface Ocean Temperature (PS 26066)",
     version="1.0.0"
 )
@@ -44,7 +44,7 @@ def get_system_info():
     """Returns domain bounding box, resolutions, depths, variables metadata."""
     dates = cache_mgr.loader.get_dates()
     return {
-        "project": "OceanEmbed",
+        "project": "Project ABYSS",
         "problem_statement_id": "26066",
         "organization": "Ministry of Earth Sciences (MoES) / INCOIS",
         "domain": {

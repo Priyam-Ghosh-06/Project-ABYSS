@@ -24,14 +24,14 @@ import type { ColormapType } from './lib/colormaps';
 
 export function App() {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    const saved = localStorage.getItem('oceanembed_theme');
+    const saved = localStorage.getItem('abyss_theme') || localStorage.getItem('oceanembed_theme');
     return saved ? saved === 'dark' : false;
   });
 
   const toggleDarkMode = () => {
     setIsDarkMode((prev) => {
       const next = !prev;
-      localStorage.setItem('oceanembed_theme', next ? 'dark' : 'light');
+      localStorage.setItem('abyss_theme', next ? 'dark' : 'light');
       return next;
     });
   };

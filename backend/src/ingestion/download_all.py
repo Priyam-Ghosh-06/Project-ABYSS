@@ -1,5 +1,5 @@
 """
-Unified Command-Line Interface for Downloading OceanEmbed Datasets.
+Unified Command-Line Interface for Downloading Project ABYSS Datasets.
 """
 
 import argparse
@@ -17,7 +17,7 @@ from src.ingestion.download_podaac import download_podaac_dataset
 
 def main():
     parser = argparse.ArgumentParser(
-        description="OceanEmbed (PS 26066) - Data Ingestion Tool for North Indian Ocean"
+        description="Project ABYSS (PS 26066) - Data Ingestion Tool for North Indian Ocean"
     )
     parser.add_argument(
         "--config",
@@ -59,7 +59,7 @@ def main():
         selected_vars = ["sst", "sss", "ssh", "target_glorys", "winds", "currents"]
 
     print("\n=======================================================")
-    print(" OceanEmbed Data Ingestion Pipeline")
+    print(" Project ABYSS Data Ingestion Pipeline")
     print(f" Region     : {dom['name']} (Lat: {dom['lat_min']} to {dom['lat_max']}, Lon: {dom['lon_min']} to {dom['lon_max']})")
     print(f" Period     : {start_date} to {end_date}")
     print(f" Variables  : {', '.join(selected_vars)}")

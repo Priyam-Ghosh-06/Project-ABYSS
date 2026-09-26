@@ -1,4 +1,4 @@
-// Colormap utilities for OceanEmbed scientific visualization
+// Colormap utilities for Project ABYSS scientific visualization
 export type ColormapType = 'turbo' | 'thermal' | 'haline' | 'coolwarm' | 'viridis' | 'ocean' | 'plasma';
 
 const TURBO_STOPS: [number, number, number][] = [

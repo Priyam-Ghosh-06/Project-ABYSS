@@ -22,12 +22,12 @@ export const InfoModal: React.FC<InfoModalProps> = ({
         {/* Modal Header */}
         <div className="flex items-start justify-between border-b pb-3 border-slate-200 dark:border-slate-700">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-blue-700 text-white font-bold flex items-center justify-center text-base shadow-sm">
-              OE
+            <div className="w-10 h-10 rounded-lg bg-blue-700 text-white font-black text-[11px] tracking-wider uppercase flex items-center justify-center shadow-sm">
+              ABYSS
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h2 className="text-lg font-bold">OceanEmbed Framework</h2>
+                <h2 className="text-lg font-bold">Project ABYSS Framework</h2>
                 <span className="text-xs px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200 font-semibold">
                   PS ID: 26066
                 </span>
@@ -57,7 +57,7 @@ export const InfoModal: React.FC<InfoModalProps> = ({
             surface monitoring.
           </p>
           <p className={isDarkMode ? 'text-slate-300' : 'text-slate-700'}>
-            <strong>OceanEmbed</strong> reconstructs depth-wise 3D subsurface temperature from daily surface satellite
+            <strong>Project ABYSS</strong> reconstructs depth-wise 3D subsurface temperature from daily surface satellite
             observations at 0.25° spatial resolution across the North Indian Ocean domain (5°N to 30°N and 45°E to 105°E).
           </p>
         </div>

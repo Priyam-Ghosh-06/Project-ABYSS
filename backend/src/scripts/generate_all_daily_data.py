@@ -1,5 +1,5 @@
 """
-Batch Harmonization & Dataset Generator for OceanEmbed (PS 26066).
+Batch Harmonization & Dataset Generator for Project ABYSS (PS 26066).
 Processes all 365 daily steps in 2018 from raw NetCDF into standardized,
 pre-computed, compressed daily packages in backend/data/processed/daily_025/.
 """
@@ -27,7 +27,7 @@ DAILY_DIR = PROCESSED_DATA_DIR / "daily_025"
 DAILY_DIR.mkdir(parents=True, exist_ok=True)
 
 def generate_all_days():
-    print(f"=== OceanEmbed Batch Harmonizer ===")
+    print(f"=== Project ABYSS Batch Harmonizer ===")
     print(f"Target Output Directory: {DAILY_DIR}")
     print(f"Grid: {len(TARGET_LATS)} Latitudes x {len(TARGET_LONS)} Longitudes (0.25° resolution)")
     print(f"Depths: {len(STANDARD_DEPTHS)} Standard Levels ({STANDARD_DEPTHS.tolist()})")

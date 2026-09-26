@@ -1,5 +1,5 @@
 """
-Multi-Year Batch Ingestion Module for OceanEmbed (2010 - 2026).
+Multi-Year Batch Ingestion Module for Project ABYSS (2010 - 2026).
 Downloads data year-by-year with automatic resume capability and handles
 the transition from Reprocessed Multi-Year (MY) data (2010-2023) to Near Real-Time (NRT) data (2024-2026).
 """
@@ -153,7 +153,7 @@ def main():
     selected_vars = all_vars if "all" in args.variables else args.variables
 
     print("\n=======================================================")
-    print(" OceanEmbed Multi-Year Batch Downloader (2010 - 2026)")
+    print(" Project ABYSS Multi-Year Batch Downloader (2010 - 2026)")
     print(f" Years      : {args.start_year} -> {args.end_year}")
     print(f" Variables  : {', '.join(selected_vars)}")
     print(f" Target Dir : {raw_base}")

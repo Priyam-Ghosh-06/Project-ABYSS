@@ -1,4 +1,4 @@
-# OceanEmbed (SIH Problem Statement 26066)
+# Project ABYSS (SIH Problem Statement 26066)
 
 > **Satellite Embedding-Based Deep Learning Framework for Reconstruction of Subsurface Ocean Temperature from Surface Satellite Observations**  
 > **Ministry of Earth Sciences (MoES), Indian National Centre for Ocean Information Services (INCOIS)**
@@ -9,7 +9,7 @@
 
 Direct vertical ocean temperature observations (from ARGO floats, mooring buoys, and gliders) are spatially and temporally sparse. Conversely, remote sensing satellites provide continuous daily surface observations at high spatial resolution.
 
-**OceanEmbed** addresses this gap by bridging surface satellite observations with deep ocean thermal structure over the **North Indian Ocean ($5^\circ\text{N} - 30^\circ\text{N}, 45^\circ\text{E} - 105^\circ\text{E}$)** at **$0.25^\circ \times 0.25^\circ$ spatial resolution** across **15 standard vertical depth levels ($0 - 1000\,\text{m}$)**.
+**Project ABYSS** addresses this gap by bridging surface satellite observations with deep ocean thermal structure over the **North Indian Ocean ($5^\circ\text{N} - 30^\circ\text{N}, 45^\circ\text{E} - 105^\circ\text{E}$)** at **$0.25^\circ \times 0.25^\circ$ spatial resolution** across **15 standard vertical depth levels ($0 - 1000\,\text{m}$)**.
 
 ---
 
@@ -45,7 +45,7 @@ Direct vertical ocean temperature observations (from ARGO floats, mooring buoys,
 
 ### 4. AI Model Inference & Ground Truth Verification
 
-- Side-by-side vertical column comparison of **Target Ground Truth (GLORYS Reanalysis)** vs. **Predicted Subsurface Temperature (OceanEmbed Deep Learning Model)**.
+- Side-by-side vertical column comparison of **Target Ground Truth (GLORYS Reanalysis)** vs. **Predicted Subsurface Temperature (Project ABYSS Deep Learning Model)**.
 - **Residual Anomaly Map ($\Delta T$):** Real-time spatial error difference mapping ($\Delta T = T_{\text{pred}} - T_{\text{target}}$) with symmetric coolwarm colormap ($[-0.4^\circ\text{C}, +0.4^\circ\text{C}]$).
 - **Dataset Partition Indicators:** Clear visual badges for *Train Partition (Jan – Aug)*, *Validation Partition (Sep – Oct)*, and *Test Partition (Nov – Dec)*.
 

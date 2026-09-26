@@ -1,5 +1,5 @@
 """
-Server entrypoint for OceanEmbed Backend API.
+Server entrypoint for Project ABYSS Backend API.
 Runs Uvicorn ASGI server on port 8000.
 """
 

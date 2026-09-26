@@ -1,5 +1,5 @@
 """
-Configuration and settings module for OceanEmbed Backend.
+Configuration and settings module for Project ABYSS Backend.
 Defines domain parameters, depth levels, variable definitions, and file paths.
 """
 

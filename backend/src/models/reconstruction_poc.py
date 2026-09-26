@@ -1,5 +1,5 @@
 """
-OceanEmbed Deep Learning Framework Inference & Validation Module.
+Project ABYSS Deep Learning Framework Inference & Validation Module.
 Serves pre-computed AI predicted subsurface temperature fields from backend/data/processed/ai_predictions_025/
 and evaluates error metrics (RMSE, Bias, MAE, Pearson Correlation) against GLORYS ground truth.
 """
@@ -74,7 +74,7 @@ class ReconstructionEngine:
                 "ocean_grid_points": int(np.count_nonzero(ocean_mask))
             },
             "model_info": {
-                "architecture": "OceanEmbed Hybrid ViT-CNN Autoencoder",
+                "architecture": "Project ABYSS Hybrid ViT-CNN Autoencoder",
                 "latent_dim": 128,
                 "split": split,
                 "input_channels": ["SST (OSTIA)", "SSS (SMAP)", "SSH (DUACS)", "Winds_U/V (CCMP)", "Currents_U/V (OSCAR)"]
