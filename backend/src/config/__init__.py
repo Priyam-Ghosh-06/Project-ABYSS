@@ -1,0 +1,16 @@
+from .settings import (
+    BACKEND_DIR,
+    DATA_DIR,
+    RAW_DATA_DIR,
+    PROCESSED_DATA_DIR,
+    CACHE_DIR,
+    LAT_MIN,
+    LAT_MAX,
+    LON_MIN,
+    LON_MAX,
+    RESOLUTION,
+    TARGET_LATS,
+    TARGET_LONS,
+    STANDARD_DEPTHS,
+    VARIABLES_METADATA,
+)
